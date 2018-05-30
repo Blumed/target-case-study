@@ -32,22 +32,4 @@ PurchasePath.propTypes = {
     purchasingChannelCode: PropTypes.string.isRequired,
 };
 
-// class PurchasePath extends Component {
-//     render() {
-//         function AvailableOnline(props) {
-//             const availableOnline = props.availableOnline;
-//             if (availableOnline) {
-//                 return <PurchasePathButton secondary="true" type="button" >ADD TO CART</PurchasePathButton>;
-//             }
-//             return null
-//         }
-//         return (
-//             <PurchasePathContainer>
-//                 <PurchasePathButton type="button">PICK UP IN STORE</PurchasePathButton>
-//                 <AvailableOnline availableOnline={true} />
-//             </PurchasePathContainer>
-//         );
-//     }
-// }
-
 export default PurchasePath
