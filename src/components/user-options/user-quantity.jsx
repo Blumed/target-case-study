@@ -1,25 +1,25 @@
 import React from 'react';
-import { QuantityContainer, QuantityInterface, QuantityLabel, QuantityInteger, QuantityButtons, QuantityButton, QuantityIcon } from './styled';
+import { QuantityContainer, QuantityInterface, QuantityButtons,  QuantityInteger } from './styled';
 
 const Quantity = () => (
         <QuantityContainer>
             <QuantityInterface>
-                <QuantityLabel>quantity:</QuantityLabel>
+                <label>quantity:</label>
                 <QuantityButtons>
 
-                    <QuantityButton type="button">
-                        <QuantityIcon>
+                    <button type="button">
+                        <svg>
                             <use href="#icon-minus-round"></use>
-                        </QuantityIcon>
-                    </QuantityButton>
+                        </svg>
+                    </button>
 
                     <QuantityInteger>0</QuantityInteger>
 
-                    <QuantityButton type="button">
-                        <QuantityIcon>
+                    <button type="button">
+                        <svg>
                             <use href="#icon-plus-round"></use>
-                        </QuantityIcon>
-                    </QuantityButton>
+                        </svg>
+                    </button>
 
                 </QuantityButtons>
             </QuantityInterface>

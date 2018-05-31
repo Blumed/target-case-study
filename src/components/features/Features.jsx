@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FeatureContainer, FeatureTitle, FeatureList, FeatureListItem } from './styled';
+import { FeatureContainer, FeatureListItem } from './styled';
 
 class Features extends Component {
     
@@ -10,10 +10,10 @@ class Features extends Component {
 
         return (
             <FeatureContainer>
-                <FeatureTitle>product highlights</FeatureTitle>
-                <FeatureList>
+                <h2>product highlights</h2>
+                <ul>
                     { featuredListItems }
-                </FeatureList>
+                </ul>
             </FeatureContainer>
         )
     }

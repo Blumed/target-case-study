@@ -13,14 +13,15 @@ export const QuantityInterface = styled.div`
     border: 1px solid #d3d2d2;
     border-radius: 2px;
     padding: 3px 8px;
+    label {
+        color: #333;
+        font-size: 14px;
+        font-weight: normal;  
+    }
 `;
 
 
-export const QuantityLabel = styled.label`
-    color: #333;
-    font-size: 14px;
-    font-weight: normal;
-`;
+
 
 export const QuantityInteger = styled.span`
     color: #333;
@@ -33,26 +34,23 @@ export const QuantityButtons = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-`;
-
-export const QuantityButton = styled.button`
-    position: relative;
-    cursor: pointer;
-    background-color: #ccc;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 0;
-`;
-
-export const QuantityIcon = styled.svg`
-    width: 100%;
-    position: absolute;
-    z-index: 1000;
-    height: 100%;
-    top: 0;
-    left: 0;
-    fill: white;
+    button {
+        position: relative;
+        background-color: #ccc;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 0;
+        svg {
+            width: 100%;
+            position: absolute;
+            z-index: 1000;
+            height: 100%;
+            top: 0;
+            left: 0;
+            fill: white; 
+        }
+    }
 `;
 
 // User Purchase Path

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { CarouselActiveImage, CarouselActive, CarouselInterface, CarouselControl, CarouselControlImage, CarouselThumbnailContainer,CarouselThumbnailActive, CarouselThumbnailImage } from'./styled';
+import { CarouselActive, CarouselInterface, CarouselThumbnailContainer } from'./styled';
 
 class ProductCarousel extends Component {
 
@@ -62,24 +62,24 @@ class ProductCarousel extends Component {
         return (
             <div>
                 <CarouselActive>
-                    <CarouselActiveImage src={ activeImageSrc } alt="alt text" />
+                    <img src={ activeImageSrc } alt="alt text" />
                 </CarouselActive>
                 <CarouselInterface>
-                    <CarouselControl onClick={ this.movePrev.bind(this) }>
-                        <CarouselControlImage>
+                    <button onClick={ this.movePrev.bind(this) }>
+                        <svg>
                             <use href="#icon-chevron-left"></use>
-                        </CarouselControlImage>
-                    </CarouselControl>
+                        </svg>
+                    </button>
                     <CarouselThumbnailContainer>
-                        <CarouselThumbnailImage src={ prevImageSrc } alt="alt text" />
-                        <CarouselThumbnailActive src={ activeImageSrc } alt="alt text" />
-                        <CarouselThumbnailImage src={ nextImageSrc } alt="alt text"/>
+                        <img src={ prevImageSrc } alt="alt text" />
+                        <img classname="carousel-active-thumb" src={ activeImageSrc } alt="alt text" />
+                        <img src={ nextImageSrc } alt="alt text"/>
                     </CarouselThumbnailContainer>
-                    <CarouselControl onClick={ this.moveNext.bind(this) }>
-                        <CarouselControlImage>
+                    <button onClick={ this.moveNext.bind(this) }>
+                        <svg>
                             <use href="#icon-chevron-right"></use>
-                        </CarouselControlImage>
-                    </CarouselControl>
+                        </svg>
+                    </button>
                 </CarouselInterface>
             </div>
         )
